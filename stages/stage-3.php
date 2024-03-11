@@ -1,4 +1,4 @@
-<script src="desktop.js" type="text/javascript"></script>
+<script src="../scripts/desktop.js" type="text/javascript"></script>
 <div class="pixelify-sans-desktop">
     <div id="desktop-container">
         <div id="desktop-bar">
@@ -20,7 +20,7 @@
                             <div class="desktop-app-tab-header-close" id="close-app-puzzle">X</div>
                         </div>
                         <div class="desktop-app-tab-content">
-                            <img src="CyberTimesExclusive.png" alt="">
+                            <img src="../img/CyberTimesExclusive.png" alt="">
 
                             <p class="p10">March 10, '84 - A leap in computing! The ZX Spectrum, with 48K memory, hits the market.
                                 Priced at just $199, it's a steal. Visit us at 16-bit Avenue to grab yours.</p>

@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-    cursor: url("cursor1.png"), auto;
+    cursor: url("img/cursor1.png"), auto;
 }
 
 body {
@@ -83,7 +83,7 @@ body {
 
 #stage-1 > div.aero > div:hover {
     background: white;
-    cursor: url("cursor2.png"), auto;
+    cursor: url("img/cursor2.png"), auto;
 }
 
 #stage-1 > div.aero > div#key.visit:hover {
@@ -125,7 +125,7 @@ body {
 #left-control-panel > div#lc-3.visit:hover {
     background: white;
     color: black;
-    cursor: url("cursor2.png"), auto;
+    cursor: url("img/cursor2.png"), auto;
 }
 
 #message-box {
@@ -160,7 +160,7 @@ body {
 
 #user-interface > div:hover {
     text-decoration: underline;
-    cursor: url("cursor2.png"), auto;
+    cursor: url("img/cursor2.png"), auto;
 }
 
 #air-supply {
@@ -175,7 +175,7 @@ body {
 }
 
 #air-supply > img:hover {
-    cursor: url("cursor2.png"), auto;
+    cursor: url("img/cursor2.png"), auto;
 }
 
 #desktop-container {
@@ -292,19 +292,19 @@ body {
 }
 
 #desktop-body-content > .desktop-icon:hover {
-    cursor: url("cursor2.png"), auto;
+    cursor: url("img/cursor2.png"), auto;
     border: 1px dashed white;
 }
 
 #puzzle-icon {
-    background-image: url("puzzle-icon.jpg");
+    background-image: url("img/puzzle-icon.jpg");
     background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #crypt-icon {
-    background-image: url("crypt-icon.png");
+    background-image: url("img/crypt-icon.png");
     background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
@@ -351,7 +351,7 @@ body {
 
 .desktop-app-tab-header-close:hover {
     scale: 1.5;
-    cursor: url("cursor2.png"), auto;
+    cursor: url("img/cursor2.png"), auto;
 }
 
 #desktop-app-crypt-code {
@@ -460,7 +460,7 @@ body {
 }
 
 #puzzle-app .desktop-app-tab-content {
-    background-image: url("CyberTimeBG.jpg");
+    background-image: url("img/CyberTimeBG.jpg");
     background-size: 125%;
     background-position: center;
     background-repeat: no-repeat;

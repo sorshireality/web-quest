@@ -2,7 +2,7 @@
 <head>
     <title>Our Pixel Quest</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" type="text/javascript"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
@@ -17,9 +17,9 @@
             <div id="lc-3"></div>
         </div>
         <div class="container" id="main">
-            <div id="stage-1"><?php require_once "stage-1.php" ?></div>
-            <div id="stage-2"><?php require_once "stage-2.php" ?></div>
-            <div id="stage-3"><?php require_once "stage-3.php" ?></div>
+            <div id="stage-1"><?php require_once "stages/stage-1.php" ?></div>
+            <div id="stage-2"><?php require_once "stages/stage-2.php" ?></div>
+            <div id="stage-3"><?php require_once "stages/stage-3.php" ?></div>
         </div>
     </div>
 </body>

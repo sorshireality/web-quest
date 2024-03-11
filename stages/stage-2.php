@@ -1,5 +1,5 @@
 <div id="air-supply">
-    <img src="accum.png" alt="">
+    <img src="../img/accum.png" alt="">
 </div>
 <div>
     <div id="message-box">
