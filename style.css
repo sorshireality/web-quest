@@ -1,0 +1,508 @@
+#helper {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    left: 0;
+    top: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url("cursor1.png"), auto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 10px;
+    border: 10px double white;
+    width: 500px;
+    height: 300px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#main.pc-mode {
+    border: 8px solid;
+    border-image: linear-gradient(45deg, rgb(52, 75, 76), rgb(110, 156, 159)) 10;
+    background: none;
+}
+
+#stage-1 {
+    display: block;
+}
+
+#stage-2 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#stage-3 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#stage-1 > div.aero {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 500px;
+    border: 1px solid white;
+}
+
+#stage-1 > div.aero > div {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 500px;
+    border: 1px solid white;
+}
+
+#stage-1 > div.aero > div:hover {
+    background: white;
+    cursor: url("cursor2.png"), auto;
+}
+
+#stage-1 > div.aero > div#key.visit:hover {
+    background: peachpuff;
+}
+
+#stage-1 > div.aero > div#key2.visit {
+    background: peachpuff;
+}
+
+#left-control-panel {
+    width: 50px;
+    height: 300px;
+}
+
+
+#left-control-panel > div {
+    margin: 5px;
+    border: 1px solid black;
+    height: 95px;
+    display: flex;
+    background: darkorange;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#left-control-panel > div:nth-child(1){
+    margin-top: 0;
+}
+
+#left-control-panel > div#lc-1.visit {
+    background: indianred;
+}
+
+#left-control-panel > div#lc-1.visit:hover,
+#left-control-panel > div#lc-2.visit:hover,
+#left-control-panel > div#lc-3.visit:hover {
+    background: white;
+    color: black;
+    cursor: url("cursor2.png"), auto;
+}
+
+#message-box {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background: black;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+#message-box > div {
+    padding: 10px;
+    overflow: hidden;
+    max-height: 20px;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#user-interface {
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#user-interface > div:hover {
+    text-decoration: underline;
+    cursor: url("cursor2.png"), auto;
+}
+
+#air-supply {
+    display: none;
+    width: 64px;
+    height: 32px;
+    /*border: 1px solid black;*/
+    position: absolute;
+    /*background: cadetblue;*/
+    top: 31vh;
+    left: 33vh
+}
+
+#air-supply > img:hover {
+    cursor: url("cursor2.png"), auto;
+}
+
+#desktop-container {
+    background: rgb(62, 99, 148);
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 5px;
+    scale: 1.005;
+}
+
+#desktop-bar {
+    border-radius: 4px 4px 0 0;
+    background: rgb(219, 219, 217);
+    height: 5%;
+    border-bottom: 1px solid rgb(146, 159, 179);
+    display: flex;
+    flex-direction: row;
+}
+
+#desktop-bar-app-menu {
+    width: 50%;
+}
+
+#desktop-bar-system-data {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#desktop-bar-system-data-datetime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgrey;
+    border: 1px outset grey;
+    border-radius: 0 4px 0 0;
+    padding: 5px;
+    z-index: 1;
+}
+
+#desktop-bar-system-data-datetime:hover {
+    border: 1px inset grey;
+}
+
+#desktop-bar-system-data-datetime > span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#desktop-body {
+    font-size: 10px;
+    height: 95%;
+}
+
+#desktop-body-container {
+    width: 490px;
+    height: 270px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5px;
+}
+
+#desktop-body-content {
+    width: 490px;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    gap: 20px;
+    position: relative;
+}
+
+.desktop-icon {
+    width: 50px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.desktop-icon-pct {
+    height: 75%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.desktop-icon-pct > img {
+    width: 25px;
+    height: 25px;
+
+}
+
+.desktop-icon-label {
+    margin: 5px;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pixelify-sans-desktop {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#desktop-body-content > .desktop-icon:hover {
+    cursor: url("cursor2.png"), auto;
+    border: 1px dashed white;
+}
+
+#puzzle-icon {
+    background-image: url("puzzle-icon.jpg");
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#crypt-icon {
+    background-image: url("crypt-icon.png");
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.desktop-app-tab {
+    border: 1px outset black;
+    width: 270px; /* или какой тебе нужен размер */
+    height: 240px; /* или какой тебе нужен размер */
+    position: absolute;
+    background-color: lavender; /* для кавайности */
+}
+
+.desktop-app-tab-header {
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(146, 159, 179);
+    cursor: move; /* чтобы было понятно, что его можно таскать */
+}
+
+.desktop-app-tab-content {
+    background: grey;
+    border: 1px outset grey;
+    height: 210px;
+    position: relative;
+    margin: 5px;
+}
+
+#puzzle-app,
+#recryptor-app,
+#crypt-app,
+#system-app
+{
+    visibility: hidden;
+    z-index: 4;
+}
+/* {*/
+/*    visibility: visible;*/
+/*    z-index: 4;*/
+/*}*/
+
+.desktop-app-tab-header-close:hover {
+    scale: 1.5;
+    cursor: url("cursor2.png"), auto;
+}
+
+#desktop-app-crypt-code {
+    background: white;
+    height: 170px;
+    padding: 5px;
+}
+
+#desktop-app-crypt-code-output {
+    padding: 2px;
+    font-size: 9px;
+    background: lightgrey;
+    height: 25px;
+}
+
+#desktop-app-crypt-code-output.error {
+    color: black;
+    background: crimson;
+}
+#desktop-app-crypt-code-output.success {
+    background: lightgreen;
+    color: black;
+}
+
+#desktop-app-crypt-code p {
+    margin-left: 5px;
+}
+
+.p20 {
+    padding-left: 20px;
+}
+
+.p40 {
+    padding-left: 40px;
+}
+
+.p10 {
+    padding-left: 10px;
+}
+
+.codeEditInput {
+    height: 15px;
+    font-size: 10px;
+}
+
+#recryptor-app > .desktop-app-tab-content {
+    height: 165px;
+}
+
+.desktop-app-tab-content > .hints {
+    border: 1px solid black;
+    position: absolute;
+    width: 185px;
+    height: 165px;
+    z-index: 6;
+    mix-blend-mode: color-burn;
+}
+
+.desktop-app-tab-content > .hints::before {
+    z-index: 6;
+    content: "";
+    position: absolute;
+    background-color: transparent !important;    /* Прозрачный фон, чтобы "окошко" было видно */
+    border: 1px solid darkblue; /* Белая рамка вокруг "окошка" */
+    box-sizing: border-box;
+}
+
+#hint-1::before {
+    top: +61px; /* Расположение окна относительно верха hint-1 */
+    right: +8px; /* Расположение окна относительно левого края hint-1 */
+    width: 13px; /* Ширина "окошка" */
+    height: 14px; /* Высота "окошка" */
+}
+
+#hint-2::before {
+    top: +40px; /* Расположение окна относительно верха hint-1 */
+    right: +38px; /* Расположение окна относительно левого края hint-1 */
+    width: 11px; /* Ширина "окошка" */
+    height: 10px; /* Высота "окошка" */
+}
+
+#hint-3::before {
+    top: +136px; /* Расположение окна относительно верха hint-1 */
+    right: +81px; /* Расположение окна относительно левого края hint-1 */
+    width: 11px; /* Ширина "окошка" */
+    height: 12px; /* Высота "окошка" */
+}
+
+
+#recryptor-app {
+    background: transparent;
+    width: 200px;
+    height: 200px;
+}
+#recryptor-app >.desktop-app-tab-header {
+    background: lavender;
+}
+
+#recryptor-app > .desktop-app-tab-content {
+    background: transparent;
+}
+
+#puzzle-app .desktop-app-tab-content > img {
+    width: 100%;
+    height: auto;
+}
+
+#puzzle-app .desktop-app-tab-content {
+    background-image: url("CyberTimeBG.jpg");
+    background-size: 125%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#puzzle-app .desktop-app-tab-content > ul > li {
+    list-style-type: '>>';
+}
+
+#puzzle-app .desktop-app-tab-content > ul > li:hover {
+    text-decoration: underline dashed blue;
+}
+
+#system-app .desktop-app-tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+#system-form > input:focus {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+#system-form > input {
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+
+#system-login-button {
+    justify-self: flex-start;
+}
+
+#tip1 {
+    position: sticky;
+    top: 103px;
+    right: 835px;
+}
+
+#tip1 img{
+    width: 150px;
+    height: 150px;
+}
